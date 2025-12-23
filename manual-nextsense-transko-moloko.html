@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manual Book NextSense – Transko Moloko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f1f2e;
+      color: #eaeaea;
+      margin: 0;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c5a, #0b1622);
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      color: #9fbad5;
+    }
+    header p {
+      margin-top: 10px;
+      color: #7aa0c4;
+    }
+    section {
+      padding: 35px 70px;
+    }
+    h2 {
+      color: #4fc3f7;
+      border-bottom: 2px solid #233a52;
+      padding-bottom: 6px;
+    }
+    h3 {
+      color: #81d4fa;
+    }
+    .box {
+      background: #16283a;
+      border-radius: 12px;
+      padding: 22px;
+      margin: 22px 0;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    .screenshot {
+      margin: 25px 0;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #233a52;
+    }
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #9fbad5;
+    }
+    footer {
+      background: #0b1622;
+      text-align: center;
+      padding: 25px;
+      color: #7aa0c4;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MANUAL BOOK</h1>
+  <h2>Sistem Monitoring NextSense – Transko Moloko</h2>
+  <p>Versi Dokumen 1.0 | PTK System – NextSense</p>
+</header>
+
+<section>
+  <h2>1. Pendahuluan</h2>
+  <div class="box">
+    Sistem Monitoring <b>NextSense – Transko Moloko</b> digunakan untuk memantau kondisi operasional kapal secara <b>real-time</b> dan <b>historis</b> melalui data sensor mesin dan Door Panel. Sistem ini mendukung kebutuhan operasional, evaluasi performa mesin, serta dokumentasi dan audit.
+  </div>
+</section>
+
+<section>
+  <h2>2. Halaman Login</h2>
+  <div class="box">
+    Halaman Login merupakan gerbang utama untuk mengakses Sistem Monitoring NextSense. Setiap pengguna wajib melakukan autentikasi untuk memastikan bahwa hanya personel yang berwenang yang dapat mengakses data operasional kapal.
+    <br><br>
+    Pada halaman ini, pengguna diminta untuk memasukkan:
+    <ul>
+      <li><b>Username</b> – identitas pengguna yang telah terdaftar di sistem</li>
+      <li><b>Password</b> – kata sandi rahasia yang bersifat pribadi</li>
+    </ul>
+    Setelah data dimasukkan dengan benar, klik tombol <b>Login</b>. Jika autentikasi berhasil, sistem akan mengarahkan pengguna ke Dashboard Utama. Apabila gagal, sistem akan menampilkan pesan kesalahan.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-1-login.png" alt="Halaman Login NextSense">
+    <div class="caption">Gambar 1. Halaman Login NextSense</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. Dashboard Utama</h2>
+  <div class="box">
+    Dashboard Utama adalah halaman inti yang menampilkan ringkasan kondisi operasional kapal secara real-time. Informasi yang ditampilkan pada dashboard bertujuan untuk memberikan gambaran cepat kepada operator mengenai status mesin dan sensor.
+    <br><br>
+    Pada halaman ini, pengguna dapat melihat:
+    <ul>
+      <li><b>Status LIVE</b> yang menunjukkan bahwa sistem sensor terhubung dan mengirimkan data</li>
+      <li><b>Ringkasan RPM Mesin</b> untuk memantau performa mesin secara langsung</li>
+      <li><b>Status Door Panel</b> untuk mengetahui kondisi pintu kapal (OPEN / CLOSED)</li>
+    </ul>
+    Dashboard dirancang agar mudah dipahami sehingga operator dapat segera mengambil tindakan apabila terjadi kondisi abnormal.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-2-dashboard.png" alt="Dashboard Live Sensor">
+    <div class="caption">Gambar 2. Dashboard Live Sensor Data</div>
+  </div>
+</section>
+
+<section>
+  <h2>4. Monitoring RPM Mesin</h2>
+  <div class="box">
+    Fitur Monitoring RPM Mesin digunakan untuk memantau kecepatan putaran mesin kapal secara kontinu. Data RPM sangat penting untuk memastikan mesin beroperasi dalam batas normal dan untuk mendeteksi potensi gangguan sejak dini.
+    <br><br>
+    Sistem menampilkan grafik RPM untuk beberapa mesin, antara lain:
+    <ul>
+      <li><b>RPM AE 2</b> – mesin auxiliary engine 2</li>
+      <li><b>RPM AE 3</b> – mesin auxiliary engine 3</li>
+      <li><b>RPM ME Portside</b> – mesin utama sisi kiri</li>
+      <li><b>RPM ME Starboard</b> – mesin utama sisi kanan</li>
+    </ul>
+    Grafik ditampilkan berdasarkan waktu sehingga pengguna dapat menganalisis tren kenaikan atau penurunan RPM selama operasional kapal.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-3-rpm.png" alt="Grafik RPM Mesin">
+    <div class="caption">Gambar 3. Grafik RPM Mesin</div>
+  </div>
+</section>
+
+<section>
+  <h2>5. Monitoring Door Panel</h2>
+  <div class="box">
+    Monitoring Door Panel berfungsi untuk mencatat dan menampilkan status pintu kapal secara real-time dan historis. Informasi ini penting untuk aspek keselamatan dan keamanan operasional kapal.
+    <br><br>
+    Status pintu ditampilkan dalam dua kondisi utama:
+    <ul>
+      <li><b>OPEN</b> – pintu dalam kondisi terbuka</li>
+      <li><b>CLOSED</b> – pintu dalam kondisi tertutup</li>
+    </ul>
+    Grafik Door Panel memungkinkan operator melihat kapan pintu dibuka atau ditutup dalam periode waktu tertentu.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-4-door.png" alt="Grafik Door Panel">
+    <div class="caption">Gambar 4. Grafik Door Panel</div>
+  </div>
+</section>
+
+<section>
+  <h2>6. Data Historis & Filter</h2>
+  <div class="box">
+    Fitur Data Historis & Filter digunakan untuk menampilkan data sensor pada periode waktu tertentu. Fitur ini sangat berguna untuk analisis performa mesin, investigasi kejadian, dan keperluan pelaporan.
+    <br><br>
+    Pengguna dapat menentukan:
+    <ul>
+      <li>Tanggal dan waktu awal</li>
+      <li>Tanggal dan waktu akhir</li>
+    </ul>
+    Setelah filter diterapkan, sistem akan menampilkan grafik sesuai dengan rentang waktu yang dipilih.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-5-filter.png" alt="Filter Data Historis">
+    <div class="caption">Gambar 5. Filter Date & Sensor</div>
+  </div>
+</section>
+
+<section>
+  <h2>7. Export Laporan</h2>
+  <div class="box">
+    Fitur Export Laporan digunakan untuk menyimpan data monitoring dalam bentuk dokumen yang dapat digunakan sebagai arsip, laporan manajemen, maupun keperluan audit.
+    <br><br>
+    Sistem menyediakan dua format export:
+    <ul>
+      <li><b>PDF</b> – digunakan sebagai laporan resmi yang siap dicetak</li>
+      <li><b>Excel</b> – digunakan untuk analisis lanjutan dan pengolahan data</li>
+    </ul>
+    Sebelum melakukan export, disarankan untuk menerapkan filter tanggal agar data yang dihasilkan sesuai kebutuhan.
+  </div>
+
+  <div class="screenshot">
+    <img src="screenshot-6-export.png" alt="Export PDF dan Excel">
+    <div class="caption">Gambar 6. Tombol Export PDF & Excel</div>
+  </div>
+</section>
+
+<section>
+  <h2>8. Alur Operasional Harian Kapal</h2>
+  <div class="box">
+    Alur operasional harian digunakan sebagai panduan standar bagi operator dalam memanfaatkan Sistem Monitoring NextSense selama kegiatan kapal berlangsung.
+    <ol>
+      <li>Operator melakukan login ke sistem NextSense</li>
+      <li>Pastikan status koneksi sensor dalam kondisi <b>LIVE</b></li>
+      <li>Melakukan pemantauan RPM mesin secara berkala</li>
+      <li>Memastikan status Door Panel sesuai prosedur keselamatan</li>
+      <li>Melakukan pengecekan data historis apabila terjadi anomali</li>
+      <li>Admin melakukan export laporan harian atau periodik</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>9. SOP Kondisi Abnormal & Troubleshooting</h2>
+  <div class="box">
+    Bagian ini menjelaskan langkah-langkah yang harus dilakukan apabila sistem atau data sensor menunjukkan kondisi tidak normal.
+
+    <h3>9.1 Sensor Tidak LIVE</h3>
+    <ul>
+      <li>Periksa koneksi jaringan kapal</li>
+      <li>Pastikan perangkat sensor dalam kondisi menyala</li>
+      <li>Refresh halaman dashboard</li>
+      <li>Apabila masalah berlanjut, hubungi Admin atau Tim Teknis</li>
+    </ul>
+
+    <h3>9.2 RPM Mesin Tidak Normal</h3>
+    <ul>
+      <li>Perhatikan lonjakan atau penurunan RPM secara tiba-tiba</li>
+      <li>Bandingkan dengan data historis pada periode sebelumnya</li>
+      <li>Laporkan kepada bagian teknis kapal jika nilai berada di luar batas operasional</li>
+    </ul>
+
+    <h3>9.3 Door Panel Tidak Sesuai Kondisi Aktual</h3>
+    <ul>
+      <li>Pastikan kondisi fisik pintu kapal</li>
+      <li>Periksa sensor Door Panel</li>
+      <li>Catat kejadian untuk keperluan laporan</li>
+    </ul>
+
+    <h3>9.4 Gagal Export Laporan</h3>
+    <ul>
+      <li>Pastikan rentang tanggal sudah dipilih</li>
+      <li>Periksa koneksi internet</li>
+      <li>Coba ulang proses export</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2025 PTK System – NextSense<br>
+  Dokumen Resmi Sistem Monitoring Transko Moloko
+</footer>
+
+</body>
+</html>
